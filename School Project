@@ -63,24 +63,3 @@ class School {
     }
   }
 
-  
-const substituteTeachers = ['Mr. Smith', 'Ms. Johnson', 'Ms. Davis', 'Mr. Lee'];
-
-const school1 = new Primary('Primary School 1', 100, 'Students must be picked up by a parent or guardian.');
-const school2 = new Middle('Middle School 1', 500);
-const school3 = new High('High School 1', 1000, ['Football', 'Basketball', 'Baseball']);
-
-school1.quickFacts(); // logs "Primary School 1 educates 100 students at the primary school level."
-school2.quickFacts(); // logs "Middle School 1 educates 500 students at the middle school level."
-school3.quickFacts(); // logs "High School 1 educates 1000 students at the high school level."
-
-const substituteTeacher1 = School.pickSubstituteTeacher(substituteTeachers);
-console.log(substituteTeacher1); // logs a random substitute teacher name from the array
-
-school1.pickupPolicy; // returns "Students must be picked up by a parent or guardian."
-school3.sportsTeams; // returns ["Football", "Basketball", "Baseball"]
-
-school2.numberOfStudents = 600; // sets the numberOfStudents property of school2 to 600
-school2.numberOfStudents = '1000'; // logs "Invalid input: numberOfStudents must be set to a Number."
-console.log(school2);
-
